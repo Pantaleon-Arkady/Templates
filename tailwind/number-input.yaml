@@ -1,0 +1,22 @@
+<div class="relative inline-flex items-center">
+        <!-- Decrement Button -->
+        <button type="button"
+                onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.dispatchEvent(new Event('input'))"
+                class="bg-black text-white hover:bg-gray-200 focus:outline-none h-10 w-10 rounded-l-md border border-r-0 border-gray-800 flex items-center justify-center text-lg font-medium transition-colors duration-150">
+            −
+        </button>
+
+        <!-- Number Input -->
+        <input type="number"
+               value="1"
+               min="0"
+               class="bg-white text-black text-center font-medium text-base border border-gray-800 h-10 w-20 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+               aria-label="Quantity">
+
+        <!-- Increment Button -->
+        <button type="button"
+                onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.dispatchEvent(new Event('input'))"
+                class="bg-black text-white hover:bg-gray-200 focus:outline-none h-10 w-10 rounded-r-md border border-l-0 border-gray-800 flex items-center justify-center text-lg font-medium transition-colors duration-150">
+            +
+        </button>
+    </div>
